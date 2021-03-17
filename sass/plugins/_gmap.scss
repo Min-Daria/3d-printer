@@ -1,0 +1,33 @@
+.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div {
+  background-color: $color-white !important;
+  box-shadow: none !important;
+}
+
+.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div > div > div {
+  background-color: $color-white !important;
+  box-shadow: none !important;
+}
+
+.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div:first-child {
+  display: none;
+}
+
+.gm-style > div:first-child > div + div > div:last-child > div > div:last-child > img {
+  display: none;
+}
+
+.gm-style > div:first-child > div + div > div:last-child > div > div:last-child {
+  overflow: inherit !important;
+}
+
+.gm-style > div:first-child > div + div > div:last-child > div > div:last-child:after {
+  @include position(absolute, $top: 0, $right: 0);
+  @include font($size: 15px, $family: $font-family-sl-icons);
+  color: $color-heading;
+  content: "\e082";
+}
+
+.gm-style-iw {
+  top: 22px !important;
+  left: 22px !important;
+}
